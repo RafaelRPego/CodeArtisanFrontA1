@@ -21,7 +21,7 @@
     --body-font: 'inter', sans-serif;
     --title-font: 'Montserrat', sans-serif;
     --title-size-large: 2.5rem;
-    --title-size-medium: 2rem;
+    --title-size-medium: 1.5rem;
     --body-size-large: 1.125rem;
     --body-size-normal: 1rem;
     --body-size-small: 0.875rem;
@@ -241,5 +241,89 @@ cursor: pointer;
     }
     .home__image img{
         max-width: 34.375rem;
+    }
+}
+
+.advantages__container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    
+}
+.advantages__data{
+    display: flex;
+    flex-direction: column;
+    gap: 4.5rem;
+}
+
+.advantages__title{
+    font-size: var(--title-size-large);
+    color: var(--dark-color-1);
+    font-weight: 700;
+}
+.advantages__subtitle{
+    font-size: var(--title-size-medium);
+    font-weight: 500;
+}  
+.advantages__grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 4rem;
+}
+.advantages__icon{
+    font-size: 2rem;
+    border-bottom: 0.125rem solid var(--primary-color);
+    padding-bottom: 0.3rem;
+}
+.advantages__text{
+    padding-top: 1rem;
+    font-weight: 700;
+    font-size: var(--body-size-large);
+    color: var(--dark-color-1);
+    margin-bottom: .5rem;
+}
+
+.advantages__copy{
+    font-size: var(--body-size-normal);
+}
+.advantages__cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+
+.advantages__card{
+    width: 100%;
+    max-width: 18.75rem;
+}
+
+.float{
+    position: relative;
+    bottom: 8rem;
+}
+
+@media(max-width:49.375rem){
+   .advantages__container{
+    grid-template-columns: 1fr;
+    gap: 4rem;
+   }
+   .float{
+    bottom: 3rem;
+    }
+
+}
+
+@media(max-width:26.25rem){
+    .advantages__grid,
+    .advantages__cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .float{
+        bottom: unset;
+    }
+    .advantages__card{
+        max-width: 100%;
     }
 }

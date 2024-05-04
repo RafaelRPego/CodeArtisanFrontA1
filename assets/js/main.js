@@ -14,6 +14,14 @@ if (navClose) {
     });
 }
 
+const navLink = document.querySelectorAll(".nav__link");
+function linkAction() {
+  const navMenu = document.getElementById("nav-menu");
+  navMenu.classList.remove("show-menu");
+}
+navLink.forEach((n) => n.addEventListener("click", linkAction));
+
+
 function scrollHeader () {
     const header = document.getElementById("header");
     if (this.scrollY >= 100) header.classList.add("scroll-header");
