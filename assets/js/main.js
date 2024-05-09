@@ -54,6 +54,8 @@ gsap.from('.advantages__gold', 1.4, {opacity: 0, x: 100, delay: 0.6});
 gsap.from(".footer__header", 1.5, { opacity: 0, y: -150, delay: 0.2 });
 gsap.from(".footer__data", 1.5, { opacity: 0, y: 150, delay: 0.2 });
 
+gsap.from(".footer__card", 1.5, { opacity: 0.3, y: 150, delay: 0.25 });
+
 
 document.addEventListener("DOMContentLoaded", function () {
     const buttons = document.querySelectorAll(".footer__button");
