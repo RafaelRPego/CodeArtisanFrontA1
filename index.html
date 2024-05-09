@@ -55,7 +55,7 @@
                 </div>
             </ul>
         </div>
-       <a href="#" class="nav__button">ABRIR CONTA</a> 
+       <a href="#" class="nav__button button__block">ABRIR CONTA</a> 
        <div class="nav__toggle" id="nav-toggle">
             <i class="ri-menu-line icon"></i>
        </div>
@@ -79,6 +79,7 @@
             <img
             src="./assets/img/home/homecapa.webp"
             alt="imagem de uma mulher, loira, de pele clara, usando camisa branca, segurando um cartão black do c6 bank e com o celular na mão"
+            class="home__cover"
             />
         </article>
     </article>
@@ -91,7 +92,7 @@
                     <p class="advantages__subittle">economize seu dinheiro</p>
                 </div>
                 <article class="advantages__grid">
-                    <div class="advantages__item">
+                    <div class="advantages__item advantages__bank">
                     <i class="ri-bank-line advantages__icon"></i>
                     <p class="advantages__text">
                         Saques nos caixas da rede Banco24Horas
@@ -100,7 +101,7 @@
                         São mais de 23 mil caixas em 680 municípios do Brasil. Saques ilimitados sem cobrança de tarifa.
                     </p>
                     </div>
-                    <div class="advantages__item">
+                    <div class="advantages__item advantages__pay">
                         <i class="ri-exchange-dollar-line advantages__icon"></i>
                         <p class="advantages__text">
                             Transferências e TEDs ilimitadas
@@ -109,14 +110,14 @@
                             Movimente seu dinheiro para qualquer conta em qualquer banco sem pagar nada por isso.
                         </p>
                     </div>
-                    <div class="advantages__item">
+                    <div class="advantages__item advantages__code">
                         <i class="ri-barcode-line advantages__icon"></i>
                         <p class="advantages__text">Depósito por boleto</p>
                         <p class="advantages_copy">
                             Emita boletos grátis e traga dinheiro para a sua conta C6 sem pagar tarifas.
                             </p>
                     </div>
-                    <div class="advantages__item">
+                    <div class="advantages__item advantages__hour">
                         <i class="ri-24-hours-fill advantages__icon"></i>
                         <p class="advantages__text">Atendimento 24h</p>
                         <p class="advantages_copy">
@@ -129,22 +130,22 @@
                 <img 
                 src="./assets/img/advantages/card-1.webp" 
                 alt="cartáo de crédito c6 bank de cor azul" 
-                class="advantages__card"
+                class="advantages__card advantages__blue"
                 />
                 <img 
                 src="./assets/img/advantages/card-2.webp" 
                 alt="cartáo de crédito c6 bank de cor rosa" 
-                class="advantages__card float"
+                class="advantages__card float advantages__pink"
                 />
                 <img 
                 src="./assets/img/advantages/card-3.webp" 
                 alt="cartáo de crédito c6 bank de cor prata" 
-                class="advantages__card"
+                class="advantages__card advantages__silver"
                 />
                 <img 
                 src="./assets/img/advantages/card-4.webp" 
                 alt="cartáo de crédito c6 bank de cor dourada" 
-                class="advantages__card float"
+                class="advantages__card float advantages__gold"
                 />
             </article>
         </article>
@@ -157,19 +158,46 @@
                 <p class="footer__text">com produtos exclusivos.</p>
             </div>
             <div class="footer__buttons">
-                <a href="#" class="footer__button active" id="footer-button"
+                <a class="footer__button active" 
+                data-target="#you"
                 >PARA VOCÊ
                 </a>
-                <a href="#" class="footer__button" id="footer-button"
+                <a class="footer__button" 
+                data-target="#company"
                 >PARA SUA EMPRESA
                 </a>
             </div>
         </article>
-        <article class="footer__data">
+        <article class="footer__data" data-content id="you">
             <div class="footer__copy">
                 <h3 class="footer__title light">Para você</h3>
             <p class="footer__text gray">Vantagens exclusivas para você</p>
-            <img src="./assets/icons/nfc.svg" alt="icone de nfc preto em fundo circular branco para demonstrar funcionalidade de pagamento por aproximação" class="footer__nfc">
+            <img 
+            src="./assets/icons/nfc.svg" 
+            alt="icone de nfc preto em fundo circular branco para demonstrar funcionalidade de pagamento por aproximação" 
+            class="footer__nfc"/>
+            </div>
+            <div class="footer__image">
+                <img 
+                src="./assets/img/footer/black-card.webp" 
+                alt="cartáo de crédito c6 bank de cor preta" 
+                class="footer__card" 
+                />
+                <img 
+                src="./assets/img/footer/bank-acc.webp" 
+                alt="celular preto com o aplicativo do c6 bank aberto mostrando conta bancária" 
+                class="footer__mobile"
+                />
+            </div>
+        </article>
+        <article class="footer__data" id="company">
+            <div class="footer__copy">
+                <h3 class="footer__title light">Para sua empresa</h3>
+            <p class="footer__text gray">Soluções financeiras para sua empresa</p>
+            <img 
+            src="./assets/icons/nfc.svg" 
+            alt="icone de nfc preto em fundo circular branco para demonstrar funcionalidade de pagamento por aproximação" 
+            class="footer__nfc"/>
             </div>
             <div class="footer__image">
                 <img 
@@ -187,6 +215,7 @@
     </article>
    </footer>
  </main>
+ <script src="./assets/js/gsap.min.js"></script>
 <script src="./assets/js/main.js"></script>
 </body>
 </html>
